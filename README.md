@@ -73,30 +73,23 @@ pip install tensorflow pymc arviz numpy pandas matplotlib seaborn scikit-learn j
 
 ## How to Run
 
+1. **Ensure all model files and data are in place** as per the folder structure above.
 
+2. **Run the demo:**
+   - Open `Run_unified_framework.ipynb`
+   - Run all cells sequentially
+   - The MCMC fusion step processes 960 operations (10 samples × 96 timesteps) and typically completes in a few minutes
 
-**1. \*\*Ensure all model files and data are in place\*\* as per the folder structure above.**
+3. **Output figures** are saved to the `figures/` directory.
 
-
-
-**2. \*\*Run the demo\*\*:**
-
-&#x20;  **- Open `Run\_unified\_framework.ipynb`**
-
-&#x20;  **- Run all cells sequentially**
-
-&#x20;  **- The MCMC fusion step processes 960 operations (10 samples × 96 timesteps) and typically completes in a few minutes**
-
-
-**3. \*\*Output figures\*\* are saved to the `figures/` directory.**MCMC Configuration
+## MCMC Configuration
 
 The Bayesian sensor fusion uses the No-U-Turn Sampler (NUTS) with the following configuration:
-
-* 1000 posterior draws
-* 500 tuning steps
-* 4 independent chains
-* Student-t distribution with 4 degrees of freedom
-* Target acceptance rate: 0.8
+- 1000 posterior draws
+- 500 tuning steps
+- 4 independent chains
+- Student-t distribution with 4 degrees of freedom
+- Target acceptance rate: 0.8
 
 ## Data
 
