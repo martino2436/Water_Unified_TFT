@@ -37,8 +37,8 @@ Water_Unified_TFT/
 ├── models/
 │   ├── tft_weights.h5             # R-TFT trained weights
 │   ├── tft_config.pkl             # R-TFT model configuration
-│   ├── tft_temporal\\\_weights.h5    # L-TFT trained weights
-│   └── tft_temporal\\\_config.pkl    # L-TFT model configuration
+│   ├── tft_temporal_weights.h5    # L-TFT trained weights
+│   └── tft_temporal_config.pkl    # L-TFT model configuration
 ├── source/
 │   ├── tft.py                     # R-TFT architecture
 │   ├── tft_temporal.py            # L-TFT architecture
