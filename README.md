@@ -29,23 +29,23 @@ The demo runs the full pipeline on 10 exemplar samples (5 leakage, 5 non-leakage
 ## Folder Structure
 
 ```
-unified\\\_framework/
-├── Run\\\_unified\\\_framework.ipynb    # Main demo notebook
-├── select\\\_exemplar\\\_samples.ipynb  # Sample selection tool (run once)
-├── mcmc\\\_fusion.py                 # Bayesian sensor fusion module
+Water_Unified_TFT/
+├── Run_unified_framework.ipynb    # Main demo notebook
+├── select_exemplar_samples.ipynb  # Sample selection tool (run once)
+├── mcmc_fusion.py                 # Bayesian sensor fusion module
 ├── README.md
 ├── models/
-│   ├── tft\\\_weights.h5             # R-TFT trained weights
-│   ├── tft\\\_config.pkl             # R-TFT model configuration
-│   ├── tft\\\_temporal\\\_weights.h5    # L-TFT trained weights
-│   └── tft\\\_temporal\\\_config.pkl    # L-TFT model configuration
+│   ├── tft_weights.h5             # R-TFT trained weights
+│   ├── tft_config.pkl             # R-TFT model configuration
+│   ├── tft_temporal\\\_weights.h5    # L-TFT trained weights
+│   └── tft_temporal\\\_config.pkl    # L-TFT model configuration
 ├── source/
 │   ├── tft.py                     # R-TFT architecture
-│   ├── tft\\\_temporal.py            # L-TFT architecture
-│   ├── tft\\\_losses.py              # R-TFT custom losses and metrics
-│   └── tft\\\_losses\\\_temporal.py     # L-TFT custom losses and metrics
+│   ├── tft_temporal.py            # L-TFT architecture
+│   ├── tft_losses.py              # R-TFT custom losses and metrics
+│   └── tft_losses_temporal.py     # L-TFT custom losses and metrics
 ├── data/
-│   ├── exemplar\\\_samples.pkl       # 10 exemplar samples (created by picker)
+│   ├── exemplar_samples.pkl       # 10 exemplar samples (created by picker)
 │   └── scalers.pkl                # Output scaler for denormalisation
 └── figures/                       # Generated output figures
 ```
@@ -86,7 +86,6 @@ pip install tensorflow pymc arviz numpy pandas matplotlib seaborn scikit-learn j
 &#x20;  **- Run all cells sequentially**
 
 &#x20;  **- The MCMC fusion step processes 960 operations (10 samples × 96 timesteps) and typically completes in a few minutes**
-
 
 
 **3. \*\*Output figures\*\* are saved to the `figures/` directory.**MCMC Configuration
