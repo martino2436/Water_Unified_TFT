@@ -1,8 +1,8 @@
-# Unified Framework for Water Demand Forecasting and Early Leakage Warning
+# Unified Framework for Water Demand and Early Leakage Warning
 
 ## Paper
 
-**A Unified Framework for Water Demand Forecasting and Early Leakage Warning Using Uncertainty-Aware Temporal Fusion Transformers**
+**A Unified Framework for Water Demand and Early Leakage Warning Using Uncertainty-Aware Temporal Fusion Transformers**
 
 Martin Rapp, Jawad Fayaz
 
